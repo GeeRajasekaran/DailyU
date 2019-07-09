@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94019DFF22CCC095008097E4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94019DFE22CCC095008097E4 /* ProfileViewController.swift */; };
 		947266E422B0D78E00E2C4CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947266E322B0D78E00E2C4CD /* AppDelegate.swift */; };
 		947266EC22B0D78E00E2C4CD /* DailyU.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 947266EA22B0D78E00E2C4CD /* DailyU.xcdatamodeld */; };
 		947266EE22B0D78F00E2C4CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947266ED22B0D78F00E2C4CD /* Assets.xcassets */; };
@@ -28,11 +29,16 @@
 		94E2CCCA22B25C8F00806D83 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E2CCC822B25C8F00806D83 /* Location.swift */; };
 		94E2CCCC22B25C9B00806D83 /* PlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E2CCCB22B25C9B00806D83 /* PlacesTableViewController.swift */; };
 		94E2CCCE22B27FF900806D83 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94E2CCCD22B27FF900806D83 /* Profile.storyboard */; };
+		94FF8E3622D3211300288118 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF8E3422D3211300288118 /* TodoTableViewCell.swift */; };
+		94FF8E3722D3211300288118 /* TodoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FF8E3522D3211300288118 /* TodoTableViewCell.xib */; };
+		94FF8E3D22D326B600288118 /* TodosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94FF8E3B22D326B600288118 /* TodosCollectionViewCell.swift */; };
+		94FF8E3E22D326B600288118 /* TodosCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94FF8E3C22D326B600288118 /* TodosCollectionViewCell.xib */; };
 		E5E8EE575A62CDC114A1ACCE /* Pods_DailyU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77C2309130DCBBB26577F445 /* Pods_DailyU.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		77C2309130DCBBB26577F445 /* Pods_DailyU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94019DFE22CCC095008097E4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		947266E022B0D78E00E2C4CD /* DailyU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		947266E322B0D78E00E2C4CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		947266EB22B0D78E00E2C4CD /* DailyU.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DailyU.xcdatamodel; sourceTree = "<group>"; };
@@ -56,6 +62,10 @@
 		94E2CCC822B25C8F00806D83 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		94E2CCCB22B25C9B00806D83 /* PlacesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlacesTableViewController.swift; sourceTree = "<group>"; };
 		94E2CCCD22B27FF900806D83 /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		94FF8E3422D3211300288118 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		94FF8E3522D3211300288118 /* TodoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTableViewCell.xib; sourceTree = "<group>"; };
+		94FF8E3B22D326B600288118 /* TodosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosCollectionViewCell.swift; sourceTree = "<group>"; };
+		94FF8E3C22D326B600288118 /* TodosCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodosCollectionViewCell.xib; sourceTree = "<group>"; };
 		B467EF61A4655FAC66D446B9 /* Pods-DailyU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyU.debug.xcconfig"; path = "Target Support Files/Pods-DailyU/Pods-DailyU.debug.xcconfig"; sourceTree = "<group>"; };
 		DA102062352B336282883309 /* Pods-DailyU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DailyU.release.xcconfig"; path = "Target Support Files/Pods-DailyU/Pods-DailyU.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +82,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		94019DFD22CCC07F008097E4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				94019DFE22CCC095008097E4 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		94019E0022CCDCC8008097E4 /* ARCorner */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ARCorner;
+			sourceTree = "<group>";
+		};
 		9466B2EEF969FB584A01817D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +129,7 @@
 			children = (
 				94E2CCA622B250CB00806D83 /* ViewModel */,
 				94E2CCA522B250C600806D83 /* Model */,
+				94E2CC9922B2501900806D83 /* Controllers */,
 				94E2CC9122B2501900806D83 /* View */,
 				94E2CC8422B24EEA00806D83 /* Helpers */,
 				947266E322B0D78E00E2C4CD /* AppDelegate.swift */,
@@ -130,8 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				94E2CC9222B2501900806D83 /* Storyboards */,
+				94FF8E3922D3268D00288118 /* CollectionViewCells */,
 				94E2CC9722B2501900806D83 /* TableCells */,
-				94E2CC9922B2501900806D83 /* Controllers */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -151,6 +177,7 @@
 		94E2CC9722B2501900806D83 /* TableCells */ = {
 			isa = PBXGroup;
 			children = (
+				94FF8E3322D31FB000288118 /* MainTodoCell */,
 				94E2CC9822B2501900806D83 /* DailyInfoTableViewCell.swift */,
 			);
 			path = TableCells;
@@ -159,6 +186,8 @@
 		94E2CC9922B2501900806D83 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				94019E0022CCDCC8008097E4 /* ARCorner */,
+				94019DFD22CCC07F008097E4 /* Profile */,
 				94E2CCBC22B2594400806D83 /* Location */,
 				94E2CCBD22B2594400806D83 /* TodayInfo */,
 			);
@@ -214,6 +243,32 @@
 				94E2CCC722B25C8F00806D83 /* LocationsStorage.swift */,
 			);
 			path = Location;
+			sourceTree = "<group>";
+		};
+		94FF8E3322D31FB000288118 /* MainTodoCell */ = {
+			isa = PBXGroup;
+			children = (
+				94FF8E3422D3211300288118 /* TodoTableViewCell.swift */,
+				94FF8E3522D3211300288118 /* TodoTableViewCell.xib */,
+			);
+			path = MainTodoCell;
+			sourceTree = "<group>";
+		};
+		94FF8E3922D3268D00288118 /* CollectionViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				94FF8E3A22D3269800288118 /* TodoList */,
+			);
+			path = CollectionViewCells;
+			sourceTree = "<group>";
+		};
+		94FF8E3A22D3269800288118 /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				94FF8E3B22D326B600288118 /* TodosCollectionViewCell.swift */,
+				94FF8E3C22D326B600288118 /* TodosCollectionViewCell.xib */,
+			);
+			path = TodoList;
 			sourceTree = "<group>";
 		};
 		E63B1D6EAC9012FEF2084EFD /* Frameworks */ = {
@@ -296,6 +351,8 @@
 				94E2CC9E22B2501900806D83 /* History.storyboard in Resources */,
 				94E2CCCE22B27FF900806D83 /* Profile.storyboard in Resources */,
 				94E2CC9D22B2501900806D83 /* Main.storyboard in Resources */,
+				94FF8E3722D3211300288118 /* TodoTableViewCell.xib in Resources */,
+				94FF8E3E22D326B600288118 /* TodosCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,9 +421,12 @@
 				94E2CC8C22B24EEA00806D83 /* LogicHelper.swift in Sources */,
 				94E2CC8B22B24EEA00806D83 /* Constants.swift in Sources */,
 				94E2CC8D22B24EEA00806D83 /* DBCRUDManager.swift in Sources */,
+				94FF8E3622D3211300288118 /* TodoTableViewCell.swift in Sources */,
 				94E2CC8E22B24EEA00806D83 /* Extensions.swift in Sources */,
+				94019DFF22CCC095008097E4 /* ProfileViewController.swift in Sources */,
 				94E2CCC222B2594400806D83 /* HomeViewController.swift in Sources */,
 				94E2CCC322B2594400806D83 /* HistoryTableViewController.swift in Sources */,
+				94FF8E3D22D326B600288118 /* TodosCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

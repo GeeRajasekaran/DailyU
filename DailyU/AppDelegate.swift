@@ -123,17 +123,14 @@ extension AppDelegate: CLLocationManagerDelegate {
     func newVisitReceived(_ visit: CLVisit, description: String) {
         let location = Location(visit: visit, descriptionString: description)
         
-        // 1
         let content = UNMutableNotificationContent()
         content.title = "New Journal entry 📌"
         content.body = location.description
         content.sound = .default
         
-        // 2
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
         let request = UNNotificationRequest(identifier: location.dateString, content: content, trigger: trigger)
         
-        // 3
         center.add(request, withCompletionHandler: nil)
         
         LocationsStorage.shared.saveLocationOnDisk(location)
@@ -142,16 +139,16 @@ extension AppDelegate: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        // 1
+       
         guard let location = locations.first else {
             return
         }
         
-        // 2
+     
         AppDelegate.geoCoder.reverseGeocodeLocation(location) { placemarks, _ in
             if let place = placemarks?.first {
                 // 3
-                let description = "Fake visit: \(place)"
+                let description = "\(place)"
                 
                 //4
                 let fakeVisit = FakeVisit(
