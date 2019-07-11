@@ -67,7 +67,7 @@ class CalorieinfoViewController: UIViewController,ARSCNViewDelegate {
         // Enable Default Lighting - makes the 3D text a bit poppier.
         sceneView.autoenablesDefaultLighting = true
         
-        //////////////////////////////////////////////////
+        /////////////////////////////////////////////////////
         // Tap Gesture Recognizer
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.handleTap(gestureRecognize:)))
         tapGesture.numberOfTapsRequired = 1
