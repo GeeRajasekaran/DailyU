@@ -7,11 +7,12 @@
 //
 
 import UIKit
+import LocalAuthentication
 
-class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class HomeViewController: UIViewController {
     
     // MARK: - IBOutlets
-    @IBOutlet var tableView:UITableView!
+    @IBOutlet var collectionView:UICollectionView!
     
     // MARK: - Properties
     
@@ -19,6 +20,7 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self .touchIdAction()
         self .initialSetup()
         // Do any additional setup after loading the view.
     }
@@ -27,54 +29,80 @@ class HomeViewController: UIViewController,UITableViewDataSource,UITableViewDele
     
     func initialSetup()  {
         
-        self.tableView.register(UINib(nibName: "TodoTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifier)
-        tableView.delegate = self
-        tableView.dataSource = self
+        self.collectionView.register(UINib(nibName: "TodosCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "Cell")
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+
     }
     
-    // MARK:- Tableview delegates and datasources
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func navigateToAR()  {
         
-        let cell:TodoTableViewCell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! TodoTableViewCell
-        cell.collectionView.register(UINib(nibName: "TodosCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "Cell")
-
-        cell.setCollectionViewDataSourceDelegate(self, forRow: indexPath.row)
-
-       // cell.collectionViewOffset = storedOffsets[indexPath.row] ?? 0
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Today", bundle: nil)
+        let calViewController = storyBoard.instantiateViewController(withIdentifier: Constant.Controller.calorieDetail) as! CalorieinfoViewController
+        self.navigationController?.pushViewController(calViewController, animated: true)
     }
 
+    func touchIdAction() {
+        
+        print("hello there!.. You have clicked the touch ID")
+        
+        let myContext = LAContext()
+        let myLocalizedReasonString = "Biometric Authntication testing !! "
+        
+        var authError: NSError?
+        if #available(iOS 8.0, macOS 10.12.1, *) {
+            if myContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError) {
+                myContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: myLocalizedReasonString) { success, evaluateError in
+                    
+                    DispatchQueue.main.async {
+                        if success {
+                            // User authenticated successfully, take appropriate action
+                            //                            self.successLabel.text = "Awesome!!... User authenticated successfully"
+                        } else {
+                            // User did not authenticate successfully, look at error and take appropriate action
+                            //                            self.successLabel.text = "Sorry!!... User did not authenticate successfully"
+                        }
+                    }
+                }
+            } else {
+                // Could not evaluate policy; look at authError and present an appropriate message to user
+                //                successLabel.text = "Sorry!!.. Could not evaluate policy."
+            }
+        } else {
+            // Fallback on earlier versions
+            
+            //            successLabel.text = "Ooops!!.. This feature is not supported."
+        }
+        
+        
+    }
     
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return 8
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell:TodosCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! TodosCollectionViewCell
         
-        cell.myView.backgroundColor = UIColor.blue
+        cell.myView.backgroundColor = UIColor.random
         
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Collection view at row \(collectionView.tag) selected index path \(indexPath)")
+        self .navigateToAR()
     }
 }
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 200, height: 200)
+        
+        if indexPath.row == 0 {
+            return CGSize(width: 300, height: 100)
+        }
+        return CGSize(width: 300, height: 300)
     }
 }

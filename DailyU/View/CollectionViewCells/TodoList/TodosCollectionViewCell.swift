@@ -10,7 +10,7 @@ import UIKit
 
 class TodosCollectionViewCell: UICollectionViewCell {
 
-    @IBOutlet weak var myView:UIView!
+    @IBOutlet weak var myView:CardView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

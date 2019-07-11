@@ -56,7 +56,7 @@ struct Constant {
     }
     
     struct Controller {
-        static let kTodayWorkStatus = "TodayWorkTaskViewController"
+        static let calorieDetail = "CalorieinfoViewController"
         static let kResource = "ResourceInvolvedViewController"
         static let kMaterialList = "ProjectMaterialListTVC"
         static let kSitePeople = "TodaySiteVisitorViewController"

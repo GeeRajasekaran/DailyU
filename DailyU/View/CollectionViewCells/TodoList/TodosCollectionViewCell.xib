@@ -19,21 +19,21 @@
                 <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0ss-CM-ypz">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h9b-9z-P7g" customClass="CardView" customModule="DailyU" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                        <color key="backgroundColor" red="0.91372549020000005" green="0.086274509799999996" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
-                    </imageView>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="0ss-CM-ypz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BQF-Zm-wOp"/>
-                <constraint firstAttribute="trailing" secondItem="0ss-CM-ypz" secondAttribute="trailing" id="F85-xt-qTn"/>
-                <constraint firstAttribute="bottom" secondItem="0ss-CM-ypz" secondAttribute="bottom" id="Vyn-El-eIo"/>
-                <constraint firstItem="0ss-CM-ypz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="aId-op-9fi"/>
+                <constraint firstAttribute="trailing" secondItem="h9b-9z-P7g" secondAttribute="trailing" id="9M9-Yc-rhf"/>
+                <constraint firstAttribute="bottom" secondItem="h9b-9z-P7g" secondAttribute="bottom" id="WQ4-UR-P6J"/>
+                <constraint firstItem="h9b-9z-P7g" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kAJ-0b-R3D"/>
+                <constraint firstItem="h9b-9z-P7g" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="uFp-Ef-noG"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
-                <outlet property="myView" destination="0ss-CM-ypz" id="tz9-yZ-Uto"/>
+                <outlet property="myView" destination="h9b-9z-P7g" id="rWQ-87-mI1"/>
             </connections>
         </collectionViewCell>
     </objects>

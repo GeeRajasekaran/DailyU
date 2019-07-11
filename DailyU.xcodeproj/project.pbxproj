@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		94019DFF22CCC095008097E4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94019DFE22CCC095008097E4 /* ProfileViewController.swift */; };
+		9425BD6A22D5E9370035AC26 /* Food101.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9425BD6922D5E9370035AC26 /* Food101.mlmodel */; };
+		9425BD6D22D5E9A40035AC26 /* Dosa.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9425BD6B22D5E9A40035AC26 /* Dosa.mlmodel */; };
+		9425BD6E22D5E9A40035AC26 /* pets.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9425BD6C22D5E9A40035AC26 /* pets.mlmodel */; };
+		943CCF4A22D5F3D50053B794 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 943CCF4922D5F3D50053B794 /* CardView.swift */; };
 		947266E422B0D78E00E2C4CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947266E322B0D78E00E2C4CD /* AppDelegate.swift */; };
 		947266EC22B0D78E00E2C4CD /* DailyU.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 947266EA22B0D78E00E2C4CD /* DailyU.xcdatamodeld */; };
 		947266EE22B0D78F00E2C4CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 947266ED22B0D78F00E2C4CD /* Assets.xcassets */; };
 		947266F122B0D78F00E2C4CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 947266EF22B0D78F00E2C4CD /* LaunchScreen.storyboard */; };
+		94B838A022D4BDDC0022653A /* CalorieinfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B8389F22D4BDDC0022653A /* CalorieinfoViewController.swift */; };
 		94E2CC8B22B24EEA00806D83 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E2CC8522B24EEA00806D83 /* Constants.swift */; };
 		94E2CC8C22B24EEA00806D83 /* LogicHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E2CC8622B24EEA00806D83 /* LogicHelper.swift */; };
 		94E2CC8D22B24EEA00806D83 /* DBCRUDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E2CC8722B24EEA00806D83 /* DBCRUDManager.swift */; };
@@ -39,12 +44,17 @@
 /* Begin PBXFileReference section */
 		77C2309130DCBBB26577F445 /* Pods_DailyU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DailyU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		94019DFE22CCC095008097E4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		9425BD6922D5E9370035AC26 /* Food101.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Food101.mlmodel; sourceTree = "<group>"; };
+		9425BD6B22D5E9A40035AC26 /* Dosa.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Dosa.mlmodel; sourceTree = "<group>"; };
+		9425BD6C22D5E9A40035AC26 /* pets.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = pets.mlmodel; sourceTree = "<group>"; };
+		943CCF4922D5F3D50053B794 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		947266E022B0D78E00E2C4CD /* DailyU.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DailyU.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		947266E322B0D78E00E2C4CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		947266EB22B0D78E00E2C4CD /* DailyU.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DailyU.xcdatamodel; sourceTree = "<group>"; };
 		947266ED22B0D78F00E2C4CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		947266F022B0D78F00E2C4CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		947266F222B0D78F00E2C4CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94B8389F22D4BDDC0022653A /* CalorieinfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieinfoViewController.swift; sourceTree = "<group>"; };
 		94E2CC8522B24EEA00806D83 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		94E2CC8622B24EEA00806D83 /* LogicHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogicHelper.swift; sourceTree = "<group>"; };
 		94E2CC8722B24EEA00806D83 /* DBCRUDManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBCRUDManager.swift; sourceTree = "<group>"; };
@@ -93,8 +103,27 @@
 		94019E0022CCDCC8008097E4 /* ARCorner */ = {
 			isa = PBXGroup;
 			children = (
+				94B8389F22D4BDDC0022653A /* CalorieinfoViewController.swift */,
 			);
 			path = ARCorner;
+			sourceTree = "<group>";
+		};
+		9425BD6822D5E9250035AC26 /* CoreML */ = {
+			isa = PBXGroup;
+			children = (
+				9425BD6C22D5E9A40035AC26 /* pets.mlmodel */,
+				9425BD6B22D5E9A40035AC26 /* Dosa.mlmodel */,
+				9425BD6922D5E9370035AC26 /* Food101.mlmodel */,
+			);
+			path = CoreML;
+			sourceTree = "<group>";
+		};
+		943CCF4822D5F39A0053B794 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				943CCF4922D5F3D50053B794 /* CardView.swift */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		9466B2EEF969FB584A01817D /* Pods */ = {
@@ -155,6 +184,7 @@
 		94E2CC9122B2501900806D83 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				943CCF4822D5F39A0053B794 /* CustomView */,
 				94E2CC9222B2501900806D83 /* Storyboards */,
 				94FF8E3922D3268D00288118 /* CollectionViewCells */,
 				94E2CC9722B2501900806D83 /* TableCells */,
@@ -197,6 +227,7 @@
 		94E2CCA522B250C600806D83 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9425BD6822D5E9250035AC26 /* CoreML */,
 				94E2CCC622B25C7B00806D83 /* Location */,
 				94E2CCA722B2516100806D83 /* Coredata */,
 			);
@@ -411,21 +442,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				94E2CCC522B25C7200806D83 /* MapViewController.swift in Sources */,
+				9425BD6A22D5E9370035AC26 /* Food101.mlmodel in Sources */,
 				947266EC22B0D78E00E2C4CD /* DailyU.xcdatamodeld in Sources */,
 				94E2CCC922B25C8F00806D83 /* LocationsStorage.swift in Sources */,
 				94E2CCA122B2501900806D83 /* DailyInfoTableViewCell.swift in Sources */,
 				947266E422B0D78E00E2C4CD /* AppDelegate.swift in Sources */,
 				94E2CCCC22B25C9B00806D83 /* PlacesTableViewController.swift in Sources */,
+				9425BD6D22D5E9A40035AC26 /* Dosa.mlmodel in Sources */,
 				94E2CCC122B2594400806D83 /* ViewController.swift in Sources */,
 				94E2CCCA22B25C8F00806D83 /* Location.swift in Sources */,
+				94B838A022D4BDDC0022653A /* CalorieinfoViewController.swift in Sources */,
 				94E2CC8C22B24EEA00806D83 /* LogicHelper.swift in Sources */,
 				94E2CC8B22B24EEA00806D83 /* Constants.swift in Sources */,
 				94E2CC8D22B24EEA00806D83 /* DBCRUDManager.swift in Sources */,
 				94FF8E3622D3211300288118 /* TodoTableViewCell.swift in Sources */,
 				94E2CC8E22B24EEA00806D83 /* Extensions.swift in Sources */,
 				94019DFF22CCC095008097E4 /* ProfileViewController.swift in Sources */,
+				9425BD6E22D5E9A40035AC26 /* pets.mlmodel in Sources */,
 				94E2CCC222B2594400806D83 /* HomeViewController.swift in Sources */,
 				94E2CCC322B2594400806D83 /* HistoryTableViewController.swift in Sources */,
+				943CCF4A22D5F3D50053B794 /* CardView.swift in Sources */,
 				94FF8E3D22D326B600288118 /* TodosCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
